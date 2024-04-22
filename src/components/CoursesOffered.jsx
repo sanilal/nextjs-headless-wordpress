@@ -3,9 +3,9 @@ import CourseCategoryTabs from "./CourseCategoryTabs";
 
 export default function CoursesOffered() {
   return (
-    <div>
+    <section className="bg-cyan-lime">
       <CourseCategoryTabs />
       <CourseCategories />
-    </div>
+    </section>
   )
 }

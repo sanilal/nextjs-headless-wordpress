@@ -1,6 +1,5 @@
 import TopBar from "./TopBar";
 import HeaderLogo from "./HeaderLogo";
-import HeaderNav from "./HeaderNav";
 
 export default function Header() {
   return (
@@ -9,7 +8,7 @@ export default function Header() {
           <TopBar />
           <HeaderLogo />
       </header>
-      <HeaderNav />
+      
     </div>
   )
 }

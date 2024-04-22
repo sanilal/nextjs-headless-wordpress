@@ -3,17 +3,17 @@ import './Dropdown.css'
 
 export default function Dropdown() {
   return (
-<div className="antialiased bg-gray-200 p-4">
+<div className="">
 <div className="group inline-block">
-      <button
+      <div
         aria-haspopup="true"
         aria-controls="menu"
-        className="outline-none focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center min-w-32"
+        className="outline-none focus:outline-none flex items-center"
       >
-        <span className="pr-1 font-semibold flex-1">Dropdown</span>
+        <span className="">Courses</span>
         <span>
           <svg
-            className="fill-current h-4 w-4 transform group-hover:-rotate-180
+            className="fill-white h-4 w-4 transform group-hover:-rotate-180
         transition duration-150 ease-in-out"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -23,12 +23,12 @@ export default function Dropdown() {
             />
           </svg>
         </span>
-      </button>
+      </div>
       <ul
         id="menu"
         aria-hidden="true"
-        className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out origin-top min-w-32"
+        className="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32 text-black"
       >
         <li className="rounded-sm px-3 py-1 hover:bg-gray-100">Programming</li>
         <li className="rounded-sm px-3 py-1 hover:bg-gray-100">DevOps</li>
@@ -55,7 +55,7 @@ export default function Dropdown() {
           <ul
             id="menu-lang"
             aria-hidden="true"
-            className="bg-white border rounded-sm absolute top-0 right-0 
+            className="bg-white rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "

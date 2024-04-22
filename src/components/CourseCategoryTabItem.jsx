@@ -1,6 +1,10 @@
 
 export default function CourseCategoryTabItem() {
   return (
-    <div>CourseCategoryTabItem</div>
+    <div>
+      <div className="flex flex-col group">
+        IT Courses
+      </div>
+    </div>
   )
 }

@@ -4,18 +4,21 @@ import Dropdown from "./Dropdown";
 
 export default function HeaderNav() {
   return (
-    <div className='flex justify-between'>
-        <div className="flex grow">
+    <div className='flex justify-center absolute w-full'>
+      <div className="flex justify-between container max-w-7xl bg-very-dark-blue text-white py-2 px-4">
+        <div className="flex grow gap-6">
           <Link href="/">Home</Link>
           <Link href="/">About Us</Link>
-          <Link href="/">Courses
-            <Dropdown />
-          </Link>
+          <Dropdown />
+          <Link href="/">Corporate</Link>
+          <Link href="/">Summer Courses</Link>
+          <Link href="/">Contact</Link>
+          
         </div>
         <div className="">
-        <IoIosSearch />
+        <IoIosSearch className="text-black-coral cursor-pointer text-lg" />
         </div>
-
+</div>
     </div>
   )
 }
