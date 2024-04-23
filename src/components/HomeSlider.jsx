@@ -1,13 +1,13 @@
 "use client"
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
-import { Zoom } from "react-slideshow-image";
+import { Fade } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css'
 import Image from 'next/image'
 import React from 'react'
 import HeaderNav from './HeaderNav'
 
 export default function HomeSlider() {
-  const images = [
+  const fadeImages = [
     "/learn-machine-learning.webp",
     "/it-training-in-dubai.webp",
     "/summer-course-banner-1.jpg",
@@ -34,15 +34,15 @@ const zoomInProperties = {
     <div className='flex flex-col relative'>
         <HeaderNav />
         <div className="w-full h-screen">
-        <Zoom {...zoomInProperties}>
-            {images.map((each, index) => (
-                <div key={index} className="flex justify-center md:items-center items-start w-screen h-screen relative">  
+        <Fade >
+            {fadeImages.map((each, index) => (
+                <div key={index} className="each-fade flex justify-center md:items-center items-start w-screen h-screen relative">  
                 <Image className="w-screen object-fill" src={each} width={1920} height={766} />
                 <h1 className="absolute md:top-60 top-24 -inset-x-1/4 text-center z-10 md:text-6xl text-4xl bold text-white">Welcome</h1>
                 <p className="absolute md:top-70 top-36 -inset-x-1/4 text-center z-10 md:text-4xl text-2xl bold text-white">Welcome</p>
                 </div>
             ))}
-        </Zoom>
+        </Fade>
     </div>
     </div>
   )
