@@ -21,6 +21,7 @@ module.exports = {
       'strong-red': '#cd000e', 
       'american-silver': '#cecece',
       'chinese-silver': '#c7c7c7',
+      'gray82': '#1d1d1e',
     },
     
     extend: {
