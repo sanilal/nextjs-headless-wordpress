@@ -8,7 +8,7 @@ export default function CourseCategoryTabItem({title, icon}) {
         {icon}
         {title}
       </button>
-        <div className="w-0 h-0 border-l-[10px] border-l-transparent border-t-[13px] border-t-white border-r-[10px] border-l-cyan-lime border-r-transparent "></div>
+        <div className="w-0 h-0 border-l-[10px] border-t-[13px] border-t-white border-r-[10px] border-l-cyan-lime border-r-cyan-lime opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100"></div>
     </div>
   )
 }
