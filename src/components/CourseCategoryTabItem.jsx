@@ -4,7 +4,7 @@ import { FaLaptopCode, FaPhotoVideo, FaCogs, FaBookReader  } from "react-icons/f
 export default function CourseCategoryTabItem({title, icon, onClick}) {
   return (
     <div className="flex flex-col justify-between items-center group">
-      <button className="flex flex-col justify-center items-center p-6 coursetab bg-lily-white hover:bg-white outline-none active:bg-white focus:bg-white active:text-fire-engine-red hover:text-fire-engine-red focus:text-fire-engine-red active:font-semi-bold hover:font-semi-bold focus:font-semi-bold cursor-pointer"  onClick={onClick}>
+      <button className="flex flex-col justify-center items-center p-6 coursetab bg-lily-white hover:bg-white outline-none active:bg-white focus:bg-white active:text-fire-engine-red hover:text-fire-engine-red focus:text-fire-engine-red active:font-semi-bold hover:font-semi-bold focus:font-semi-bold cursor-pointer" onClick={onClick}>
         {icon}
         {title}
       </button>
