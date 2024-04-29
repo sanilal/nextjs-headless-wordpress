@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face{font-family:"SF TransRobotics";
+    src:url(/fonts/SFTransRobotics.eot?) format("eot"),url(/fonts/SFTransRobotics.woff) format("woff"),url(/fonts/SFTransRobotics.ttf) format("truetype"),url(/fonts/SFTransRobotics.svg#SFTransRobotics) format("svg");
+    font-weight:400;font-style:normal
+}
+.transrobotics {
+    font-family:"SF TransRobotics" !important;
+}
