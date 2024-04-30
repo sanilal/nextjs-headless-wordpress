@@ -1,6 +1,6 @@
 
-export default function AddressLeft() {
+export default function AddressLeft({address, map}) {
   return (
-    <div>AddressLeft</div>
+    <a href={map} target="_blank">{address}</a>
   )
 }

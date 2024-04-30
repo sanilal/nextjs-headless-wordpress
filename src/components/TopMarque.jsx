@@ -1,8 +1,8 @@
-export default function TopMarque() {
+export default function TopMarque({margue}) {
   return (
     <div className='overflow-x-hidden w-3/4 m-auto'>
       <div className='animate-marquee whitespace-nowrap'>
-      All Our Courses are Available ONLINE and INSTRUCTOR LED
+      {margue}
       </div>
       </div>
   )
