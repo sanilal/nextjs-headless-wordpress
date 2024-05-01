@@ -4,26 +4,26 @@ import { AiOutlineMail } from "react-icons/ai";
 
 
 
-export default function HeaderContact() {
+export default function HeaderContact({headeremail, headertel, working}) {
   return (
     <div className="flex justify-center items-center gap-3 pt-2">
       <Link 
-        href="tel:971543903209"
-        className="flex items-center gap-1"
+        href={`tel:${headertel}`}
+        className="flex items-center gap-1 text-black font-bold text-sm"
       >
         <BsTelephone  />
-        <span>+971 54 390 3209</span>
+        <span>{headertel}</span>
       </Link>
       <Link
-      href="mailto:enquiry@aptech.ae"
-      className="flex items-center gap-1"
+      href={`mailto:${headeremail}`}
+      className="flex items-center gap-1 text-black font-bold text-sm"
       >
       <AiOutlineMail />
-      enquiry@aptech.ae
+      {headeremail}
       </Link>
-      <div className="flex items-center gap-1" >
+      <div className="flex items-center gap-1 text-black font-bold text-sm" >
       <BsClock />
-      9 AM to 9 PM
+      {working}
 
       </div>
       

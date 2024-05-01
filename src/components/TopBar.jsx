@@ -16,7 +16,7 @@ export default function TopBar() {
       }
       const data = await response.json();
 
-      console.log(data);
+    //  console.log(data);
       // Handle the data here
       setSiteData(data);
     } catch (error) {
