@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import AddressLeft from "./AddressLeft";
 import AddressRight from "./AddressRight";
 import TopMarque from "./TopMarque";
+import TopSocial from "./TopSocial";
 
 export default function TopBar() {
   const [siteData, setSiteData] = useState(null);
@@ -14,6 +15,8 @@ export default function TopBar() {
         throw new Error('Failed to fetch site settings');
       }
       const data = await response.json();
+
+      console.log(data);
       // Handle the data here
       setSiteData(data);
     } catch (error) {
@@ -26,13 +29,20 @@ export default function TopBar() {
   }, []);
 
   return (
-    <div className='bg-black text-white flex justify-center'>
+    <div className='bg-black text-white flex justify-center h-10'>
       <div className='container max-w-7xl flex justify-between py-2'>
         {siteData && siteData.acf && ( // Check if siteData and siteData.acf are not null
           <>
             <AddressLeft address={siteData.acf.dubai_location} map={siteData.acf.dubai_location_map}  />
             <TopMarque margue={siteData.acf.margue} />
-            <AddressRight address={siteData.acf.sharjah_location} map={siteData.acf.sharjah_location_map} />
+            <div className="flex">
+              <AddressRight address={siteData.acf.sharjah_location} map={siteData.acf.sharjah_location_map} />
+              
+            <TopSocial social={siteData.acf.socialmedia[0]?.sm_name} socialurl={siteData.acf.socialmedia[0].sm_url} />
+            <TopSocial social={siteData.acf.socialmedia[1]?.sm_name} socialurl={siteData.acf.socialmedia[1].sm_url}  />
+
+            </div>
+            
           </>
         )}
       </div>
