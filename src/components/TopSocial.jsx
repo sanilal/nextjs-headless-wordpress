@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa6
 
 export default function TopSocial(props) {
   return (
-    <div>
+    <div className="border-l border-l-silver-chalice px-2">
       {props.social === 'Facebook' ? 
         <a href={props.socialurl}><FaFacebookF /></a> : 
         props.social === 'Instagram' ?

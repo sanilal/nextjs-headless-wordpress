@@ -30,7 +30,7 @@ export default function TopBar() {
 
   return (
     <div className='bg-black text-white flex justify-center h-10'>
-      <div className='container max-w-7xl flex justify-between py-2'>
+      <div className='container max-w-7xl flex justify-around border-l border-r border-l-silver-chalice border-r-silver-chalice  px-2'>
         {siteData && siteData.acf && ( // Check if siteData and siteData.acf are not null
           <>
             <AddressLeft address={siteData.acf.dubai_location} map={siteData.acf.dubai_location_map}  />
