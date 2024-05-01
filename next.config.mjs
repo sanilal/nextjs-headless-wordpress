@@ -6,6 +6,11 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'www.aptech.ae',
                 pathname: '**',
+            },
+            {
+                protocol: 'http',
+                hostname: 'aptechwp.webhostingdubai.net',
+                pathname: '**',
             }
         ]
     }

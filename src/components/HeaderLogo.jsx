@@ -13,7 +13,7 @@ export default function HeaderLogo() {
         throw new Error("Failed to fetch site settings");
       }
       const data = await response.json();
-      console.log(data)
+    //  console.log(data)
 
       setSiteData(data);
     }
